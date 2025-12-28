@@ -285,7 +285,7 @@ def start_attack_reply(message, target, port, time):
 # Dictionary to store the last time each user ran the /bgmi command
 bgmi_cooldown = {}
 
-COOLDOWN_TIME =
+COOLDOWN_TIME =0
 
 # Handler for /bgmi command
 @bot.message_handler(commands=['bgmi'])
@@ -451,5 +451,6 @@ while True:
         bot.polling(none_stop=True)
     except Exception as e:
         print(e)
+
 
 
